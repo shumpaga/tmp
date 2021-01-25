@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.18)
+project(test)
+#set(CMAKE_CXX_FLAGS_RELEASE "-O2")
+add_compile_options(-O2 -std)
+#target_link_libraries(SqliteTestExe dl pthread)
+add_subdirectory(OfficialSqliteTest)

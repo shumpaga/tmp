@@ -1,0 +1,5 @@
+add_executable (test sqlite3.h sqlite3.c SqliteWrapper.h SqliteWrapper.cpp test.cpp)
+target_compile_definitions(test PUBLIC "-DSQLITE_THREADSAFE=1")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2 -std=c++14")
+add_compile_options(-O2)
+# target_link_libraries(SqliteTestExe dl pthread)
